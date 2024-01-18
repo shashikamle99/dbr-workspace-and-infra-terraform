@@ -18,6 +18,6 @@ resource "random_string" "naming" {
   length  = 6
 }
 
-# locals {
-#   prefix = "demo${random_string.naming.result}"
-# }
+locals {
+  prefix = "demo${random_string.naming.result}"
+}
